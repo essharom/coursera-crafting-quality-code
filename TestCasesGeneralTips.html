@@ -1,0 +1,33 @@
+<h2>General Tips</h2>					
+
+<p>
+	When choosing test cases, consider the following factors:
+</p>
+	<ul>
+		<li><b>Size</b><br>
+		For collections (<code>strings, lists, tuples, dictionaries</code>) test with:
+		<ul>
+			<li>empty collection
+			<li>a collection with 1 item
+			<li>smallest interesting case
+			<li>collection with several items		
+		</ul>
+		<li><b>Dichotomies</b><br>
+			Consider your situation:<br>
+		<br>
+		For example:
+		<ul>
+			<li>vowels/non-vowels
+			<li>even/odd
+			<li>positive/negative
+			<li>empty/full
+			<li>etc.
+		</ul>
+		<li><b>Boundaries</b><br>
+			If a function behaves differently for a value near a particular threshold (i.e. an <code>if</code> statement checking when a value is 3; 3 is a threshold), test at that threshold.
+		<li><b>Order</b><br>
+			If a function behaves differently when the values are in a different order, identify and test each of those orders.
+	</ul>
+<p>
+	There is often overlap between the categories, so one test case may fall into more than 1 category.<br>				
+</p>
