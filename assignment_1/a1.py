@@ -65,9 +65,9 @@ def swap_k(L, k):
     [5, 6, 3, 4, 1, 2]
     """
     
-    newL = L[-k:] + L[k:-k] + L[:k]
+    L[:] = L[-k:] + L[k:-k] + L[0:k]
     
-    return newL
+    return L
 
 
 if __name__ == '__main__':
