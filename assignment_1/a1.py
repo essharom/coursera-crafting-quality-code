@@ -64,7 +64,7 @@ def swap_k(L, k):
     >>> nums
     [5, 6, 3, 4, 1, 2]
     """
-    
+    # this implementation might be buggy
     L[:] = L[-k:] + L[k:-k] + L[0:k]
     
     return L
