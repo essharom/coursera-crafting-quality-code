@@ -33,7 +33,23 @@ def stock_price_summary(price_changes):
 
     >>> stock_price_summary([0.01, 0.03, -0.02, -0.14, 0, 0, 0.10, -0.01])
     (0.14, -0.17)
+    
+    empty collection
+    a collection with 1 item
+    smallest interesting case
+    collection with several items
     """
+    
+    gains_sum = 0
+    losses_sum = 0
+    
+    for price in price_changes:
+        if price > 0:
+            gains_sum += price
+        else:
+            losses_sum += price
+    
+    return (gains_sum, losses_sum)
 
 
 def swap_k(L, k):
@@ -48,6 +64,10 @@ def swap_k(L, k):
     >>> nums
     [5, 6, 3, 4, 1, 2]
     """
+    
+    newL = L[-k:] + L[k:-k] + L[:k]
+    
+    return newL
 
 
 if __name__ == '__main__':
