@@ -21,6 +21,15 @@ class TestStockPriceSummary(unittest.TestCase):
         actual = a1.stock_price_summary([0.3])
         expected = (0.3,0)        
         self.assertEqual(actual, expected)
+        
+    def test_only_one_zero(self):
+        """
+        Testing stock_price_summary() function with a list containing only one
+        zero.
+        """
+        actual = a1.stock_price_summary([0])
+        expected = (0,0)        
+        self.assertEqual(actual, expected)
 
     def test_one_neg_item(self):
         """

@@ -44,7 +44,14 @@ class TestNumBuses(unittest.TestCase):
         actual = a1.num_buses(75)
         expected = 2
         self.assertEqual(actual, expected)
-              
+    
+    def test_multiple50_passenger(self):
+        """
+        Testing num_buses() function with 50x passenger.
+        """
+        actual = a1.num_buses(150)
+        expected = 3
+        self.assertEqual(actual, expected)
 
 if __name__ == '__main__':
     unittest.main(exit=False)
